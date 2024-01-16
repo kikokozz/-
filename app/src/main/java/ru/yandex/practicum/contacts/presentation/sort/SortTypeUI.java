@@ -12,7 +12,7 @@ public class SortTypeUI implements ListDiffInterface<SortTypeUI> {
     private final boolean selected;
 
     public boolean theSameAs(@NonNull SortTypeUI stu) {
-        return this.hashCode() == stu.hashCode();
+        return this.getSortType() == stu.getSortType();
     }
 
     public SortTypeUI(@NonNull SortType sortType, boolean selected) {

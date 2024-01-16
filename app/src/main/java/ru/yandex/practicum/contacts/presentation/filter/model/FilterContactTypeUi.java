@@ -11,7 +11,7 @@ public class FilterContactTypeUi implements ListDiffInterface<FilterContactTypeU
     private final boolean selected;
 
     public boolean theSameAs(@NonNull FilterContactTypeUi fctu) {
-        return this.hashCode() == fctu.hashCode();
+        return this.getContactType() == fctu.getContactType();
     }
 
     public FilterContactTypeUi(@NonNull FilterContactType contactType, boolean selected) {
