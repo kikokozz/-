@@ -13,14 +13,12 @@ public class BaseListDiffCallback<T extends ListDiffInterface<T>> extends DiffUt
         return oldItem.theSameAs(newItem);
     }
 
-    //public boolean theSameAs(@NonNull T oldItem, @NonNull T newItem) {
-    //    return oldItem.hashCode() == newItem.hashCode();
-    //}
 
     @Override
     public boolean areContentsTheSame(@NonNull T oldItem, @NonNull T newItem) {
         return oldItem.equals(newItem);
     }
+
     @Override
     @Nullable
     public Object getChangePayload(@NonNull T oldItem, @NonNull T newItem) {

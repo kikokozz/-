@@ -94,22 +94,5 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
         }
     }
 
-    // static class ListDiffCallback extends DiffUtil.ItemCallback<SortTypeUI> {
 
-    //  @Override
-    // public boolean areItemsTheSame(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-    //    return oldItem.getSortType() == newItem.getSortType();
-    // }
-
-    //  @Override
-    //  public boolean areContentsTheSame(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-    //      return oldItem.equals(newItem);
-    // }
-
-    // @Nullable
-    // @Override
-    // public Object getChangePayload(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-    //  return newItem;
-    // }
-    // }
 }
